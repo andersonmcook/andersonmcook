@@ -2,6 +2,9 @@
 
 This isn't true immutability, but effective immutability.
 
+This is an experiment in generically replicating and reviving data, with and
+without diffs.
+
 ## Thoughts
 
 Making copies is a good thing. It allows us to know the state of our system at a
