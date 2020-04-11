@@ -26,6 +26,19 @@ taste.
 Application schemata/structs can change, and you may not want to put an old
 record into a current schema.
 
+## Potential Strategies
+ - async Tasks (does not guarantee order)
+ - async Queue (guarantees order)
+ - sync Multi (links replication)
+ - no-diff persistence (requires full record, more space, faster lookup)
+ - diff persistence (requires only changes, less space, slower lookup)
+
+## Todos
+ - Multi functions
+ - delete functions
+ - `!` functions
+ - `_all` functions
+
 ## Metrics
  
 Insert 1 record.
