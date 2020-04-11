@@ -23,21 +23,26 @@ taste.
 Application schemata/structs can change, and you may not want to put an old
 record into a current schema.
 
-
 ## Metrics
  
 Insert 1 record.
+
 Randomly edit the record 20,000 times.
+
 Insert 20,000 unrelated records.
+
 Edit half of those unrelated records.
+
 Make controlled edits to the initial record.
+
 Begin metrics on table size and time to calculate previous version.
+
 Average across runs.
 
 | Method | Space used      | Time to calculate |
 |--------|-----------------|-------------------|
 | diff   | 7680 kb         | 152 ms            |
-| full   | 10 mb           | 3 ms
+| full   | 10 mb           | 5 ms
 
 * Note: the "full" method requires a complete data copy each edit, whereas the
   "diff" method does not.
@@ -45,6 +50,7 @@ Average across runs.
 ## Database Instructions
 
 `brew services start postgresql`
+
 `createuser -d postgres`
 
 To start your Phoenix server:
