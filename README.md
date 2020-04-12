@@ -38,6 +38,7 @@ record into a current schema.
  - delete functions
  - `!` functions
  - `_all` functions
+ - associations
 
 ## Metrics
  
